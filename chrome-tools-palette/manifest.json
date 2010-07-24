@@ -1,7 +1,7 @@
 {   
   "name": "Twitter/Brizzly Tools Palette by @paul_shinn",
   "version": "1.0.0.1",
-  "description": "A script that adds extra features to Twitter and Brizzly. See http://www.meklarian.com/mekfavelet/twitter-bookmarklets.html for more details.",
+  "description": "A script that adds extra filter/cleanup and embedding features to Twitter and Brizzly.",
   "permissions": ["http://twitter.com/*", "https://twitter.com/*", "http://brizzly.com/*", "https://brizzly.com/*"],
   "content_scripts": [{
       "matches": ["http://twitter.com/*", "https://twitter.com/*", "http://brizzly.com/*", "https://brizzly.com/*"],
