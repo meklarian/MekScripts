@@ -1,0 +1,71 @@
+<html>
+<head>
+<link type="image/x-icon" rel="icon" href="favicon.ico" />
+<link rel="shortcut icon" href="http://www.meklarian.com/mekfavelet/favicon.ico" type="image/x-icon" />
+<title>@paul_shinn's twitter bookmarklets/favelets</title>
+<style>
+* {font-family: Calibri, Helvetica, Arial;}
+h1 {font-size: 125%;}
+h2 {font-size: 115%;}
+a, p, span, div, hr, br {line-height: 150%; margin: 0;}
+ul {margin-top: 0; margin-bottom: 0; line-height: 150%;}
+hr {height: 1px; margin: 8px 0px;}
+h1, h2 {margin: 10px 0 10px 0; font-weight: normal; padding-bottom: 3px;}
+h1 {border-bottom: 2px solid #a0a0cc;}
+h2 {border-bottom: 1px solid #c0c0d8;}
+blockquote {margin: 8px; padding: 4px; border: 1px dotted #777777; background-color: #EEF4F4;}
+</style>
+</head>
+<body>
+<h1>@paul_shinn's twitter bookmarklets/favelets</h1>
+<p>To use these bookmarklets, you should right-click and add the bookmarks of the links below to your favorites.</p>
+<p>If your browser has a 'favorite links' toolbar, place the bookmark there so that you can use it with a single click.</p>
+<p>In some browsers, you may also be able to drag the link and drop it directly on the toolbar.</p>
+<p>Once you have added these bookmarklets, you may click on them to activate them while viewing a twitter page (yours or anyone else). Users of older browsers will need to select them from their favorites menu instead.</p>
+<blockquote>Alternate (and improved) versions of some of these bookmarklets are available at <a href="http://twitter.com/cutlerish">@cutlerish</a>'s page here: <a href="http://infraware.ca/twoolset">http://infraware.ca/twoolset</a>, including a Greasemonkey script for Firefox users and a Twitter Line-Break repair tool to fix multi-line tweets.<br />Also: <a href="http://userscripts.org/scripts/show/76034">A greasemonkey script to award you 1-Ups for every 100 stars on Twitter/Brizzly/Favstar.fm!</a></blockquote>
+<p>If you've never used a bookmarklet before, here are some links that can help you learn about them.</p><ul><li><a href="http://www.5min.com/Video/How-to-use-Bookmarklets-228531769">How to use Bookmarklets Video - 5min.com</a></li><li><a href="http://www.ehow.com/how_5705969_use_-find_-install-bookmarklets.html">How to use, find, and install Bookmarklets at ehow.com</a></li></ul>
+<h2>Add a Tools Palette to Twitter and Brizzly</h2>
+<var>Last Updated on June 15th, 2010</var>
+<p>This bookmarklet adds handy links into the page to toggle @ replies and hashtags, and other useful things.</p>
+<p><a href="javascript:(function(){var ssl=(&quot;https:&quot;==document.location.protocol);if(ssl){return;};var e=document.createElement('script');e.src='http://www.meklarian.com/mekfavelet/toggle-palette.js';document.getElementsByTagName('head')[0].appendChild(e);})();">ToolsPalette v3</a></p>
+<p>In twitter, these links will appear before the header of tweets. In brizzly, they will appear at the bottom of the left-hand menu list, with the heading 'Toggles'.</p>
+<p>Twitter Features</p>
+<ul>
+<li>Toggle @Mentions and #Hashtags</li>
+<li>Disable Map Hovercard Pins</li>
+<li>Filter Location Checkins (4square, Gowalla, Loopt)</li>
+<li>Filter Personal Streams (formspring, blip.fm, ustream, last.fm, twitterfeed, rhythmbox, newzform, rss2twitter, auto-tweeting, chatter.com, sharethis, alltop)</li>
+<li>Filter Game-Related Tweets (mafia wars, farmville, words/chess with friends, xbox network updates, raptr)</li>
+<li>Inline Insert Youtube/TwitVid Videos and Image Thumbnails (twitpic, yfrog, brizzly, img.ly)</li>
+<li>Filter out keywords of your choice. Also displays a Bookmarklet link so you can save and reuse your filters later.</li>
+</ul>
+<p>Brizzly Features</p>
+<ul>
+<li>Toggle @Mentions and #Hashtags</li>
+</ul>
+<h2>Toggle @ Replies/Mentions on Twitter and Brizzly</h2>
+<p>This bookmarklet can toggle back and forth between showing and hiding @ replies. Works on both Twitter and Brizzly pages!</p>
+<p><a href="javascript:(function (){var x=window._wtoggle||false;var y=$(&quot;li.status&quot;).filter(function (){return /@\w/.test($(this).text());});var z=$(&quot;div.notification-bar-container&quot;).filter(function (){return /@\w/.test($(this).text());});if(x!==true){y.hide();z.hide();window._wtoggle=true;}else{y.show();z.show();window._wtoggle=false;}})();">Toggle @Replies</a></p>
+<h2>Toggle # Hashtags on Twitter and Brizzly</h2>
+<p>This bookmarklet can toggle back and forth between showing and hiding # hashtags. Works on both Twitter and Brizzly pages!</p>
+<p><a href="javascript:(function (){var x=window._wtoggleh||false;var y=$(&quot;li.status&quot;).filter(function (){return /\#\w{2,}/.test($(this).text());});var z=$(&quot;div.notification-bar-container&quot;).filter(function (){return /#\w{2,}/.test($(this).text());});if(x!==true){y.hide();z.hide();window._wtoggleh=true;}else{y.show();z.show();window._wtoggleh=false;}})();">Toggle #hashtags</a></p>
+<h2>Disable Location Links on Twitter</h2>
+<p>This bookmarklet will disable all location reference links on Twitter pages. The links are still visible, but no hovercards or any other actions will occur when the links are clicked.</p>
+<p><a href="javascript:(function (){$(&quot;a.geocoded_google_link&quot;).bind('click', function (){return false;}).append(&quot; &lt;i&gt;(link disabled)&lt;/i&gt;&quot;);})();">Disable Locations</a></p>
+<h2>Insert Picture/Video Previews on Twitter and Favstar.Fm</h2>
+<p>This bookmarklet will insert preview images for reference links that point to Twitpic, yFrog, Brizzly Pictures, and img.ly. In addition, it will expand YouTube and TwitVid links into embedded videos.</p>
+<p><a href="javascript:(function(){var ssl=(&quot;https:&quot;==document.location.protocol);if(ssl){return;};var e=document.createElement('script');e.src='http://www.meklarian.com/mekfavelet/picture-previews3.js';document.getElementsByTagName('head')[0].appendChild(e);})();">Previews v4</a></p>
+<p>Source Code available at gist.github: <a href="http://gist.github.com/385813">http://gist.github.com/385813</a></p>
+<hr />
+<p>Made by <a href="http://twitter.com/paul_shinn">@Paul_Shinn</a>. Special thanks to <a href="http://twitter.com/hackerboss">@hackerboss</a> and <a href="http://twitter.com/careywinkle">@careywinkle</a> for testing early versions in Chrome, and to <a href="http://twitter.com/cutlerish">@cutlerish</a> for catching bugs. Additional thanks to <a href="http://twitter.com/kattcalls">@kattcalls</a>/<a href="http://twitter.com/kambrock">@kambrock</a>, <a href="http://twitter.com/BettyLies">@BettyLies</a>, <a href="http://twitter.com/HollywoodKodiak">@HollywoodKodiak</a>, <a href="http://twitter.com/navanax">@Navanax</a>, <a href="http://twitter.com/AlexDLuddite">@AlexDLuddite</a>, and <a href="http://twitter.com/NeilCamm">@NeilCamm</a> for feedback, suggestions, and other input.</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15991115-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
