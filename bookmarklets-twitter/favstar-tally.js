@@ -64,6 +64,7 @@ var _fn_collapse_first_favstars_tally = function(){
 
 if($$('#favstarTallyResults').length == 0)
 {
+  if($$('div#nowShowing').length == 0){return;}
   // CSS Hackery - Fix too much headroom, since original context uses a lead-in gap. Fix margins that leak, preventing the header from standing alone. Fix font sizes and colors for links.
   $$('div#nowShowing')[0].insert({after: "<span><div id='FavstarTallyContainer' class='avatarListContainer' style='margin-top: 10px !important; padding-bottom: 0px !important;'><div id='pivotheader' class='avatarListTitleContainer'><h1 id='favstarTallyTitle'>Favstar Tally&#160;</h1><div class='clear' /></div></div><div id='favstarTallyResults' class='top_tweeters_holder' style='padding-top: 4px !important;' /></div><div class='clear' /></span>"});
   var lnkshowFavstarStarTally = new Element('a', {id: "showFavstarStarTally", style: "font-size: 16px !important; font-weight: normal !important; color: #0000FF !important;"});
