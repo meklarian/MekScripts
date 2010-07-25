@@ -1,0 +1,11 @@
+{   
+  "name": "Favstar Tally by @paul_shinn",
+  "version": "1.0.0.0",
+  "description": "A script that allows a user to tally the people shown on a favstar page.",
+  "permissions": ["http://favstar.fm/*"],
+  "content_scripts": [{
+      "matches": ["http://favstar.fm/*"],
+      "js": ["prototype-1.6.1.js", "favstar-tally.user.js"],
+      "run_at": "document_idle"
+    }]
+}
