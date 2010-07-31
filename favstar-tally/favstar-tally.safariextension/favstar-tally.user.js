@@ -70,7 +70,7 @@ if(/Safari/i.test(navigator.userAgent)){ //Test for Safari
       {
         if($$('div#nowShowing').length == 0){return;}
         // CSS Hackery - Fix too much headroom, since original context uses a lead-in gap. Fix margins that leak, preventing the header from standing alone. Fix font sizes and colors for links.
-        $$('div#nowShowing')[0].insert({after: "<span><div id='FavstarTallyContainer' class='avatarListContainer' style='margin-top: 10px !important; padding-bottom: 0px !important;'><div id='pivotheader' class='avatarListTitleContainer'><h1 id='favstarTallyTitle'>Favstar Tally&#160;</h1><div class='clear' /></div></div><div id='favstarTallyResults' class='top_tweeters_holder' style='padding-top: 4px !important;' /></div><div class='clear' /></span>"});
+        $$('div#nowShowing')[0].insert({after: "<span><div id='FavstarTallyContainer' class='avatarListContainer' style='margin-top: 10px !important; padding-bottom: 0px !important; -webkit-border-radius: 8px; border-radius: 8px;'><div id='pivotheader' class='avatarListTitleContainer' style='-webkit-border-radius: 8px; border-radius: 8px;'><h1 id='favstarTallyTitle'>Favstar Tally&#160;</h1><div class='clear' /></div></div><div id='favstarTallyResults' class='top_tweeters_holder' style='padding-top: 4px !important; -webkit-border-radius: 8px; border-radius: 8px;' /></div><div class='clear' /></span>"});
         
         $$('#favstarTallyTitle')[0].insert("<a id='showFavstarStarTally' style='font-size: 16px !important; font-weight: normal !important; color: #0000FF !important;'>(Show)&#160;</a>");
         $$('#favstarTallyTitle')[0].insert("<a id='toggleFavstarStarTally' style='font-size: 16px !important; font-weight: normal !important; color: #0000FF !important;'>(Collapse)&#160;</a>");
