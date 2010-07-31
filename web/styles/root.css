@@ -1,0 +1,14 @@
+@media screen
+{
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal;}
+p {padding: 0; margin: 0;}
+ul {padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;}
+li {padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;}
+
+h1 {font-size: 135%;}
+h2 {font-size: 120%; border-bottom: 1px solid #80a0e0; padding-bottom: 2px;}
+h3 {font-size: 115%;}
+h4 {font-size: 110%;}
+h5 {font-size: 105%;}
+h6 {font-weight: bold;}
+}
