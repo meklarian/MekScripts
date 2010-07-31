@@ -4,18 +4,30 @@
 <dict>
 	<key>Extension Updates</key>
 	<array>
-	<dict>
-	<key>CFBundleIdentifier</key>
-	<string>com.meklarian.favstar-tally</string>
-	<key>Developer Identifier</key>
-	<string>6C367T46DR</string>
-	<key>CFBundleVersion</key>
-	<string>2</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
-	<key>URL</key>
-	<string>http://www.meklarian.com/extensions/objects/favstar-tally.safariextz</string>
-	</dict>
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>com.meklarian.favstar-tally</string>
+      <key>Developer Identifier</key>
+      <string>6C367T46DR</string>
+      <key>CFBundleVersion</key>
+      <string>2</string>
+      <key>CFBundleShortVersionString</key>
+      <string>1.1</string>
+      <key>URL</key>
+      <string>http://www.meklarian.com/extensions/objects/favstar-tally.safariextz</string>
+    </dict>
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>com.meklarian.tools-palette</string>
+      <key>Developer Identifier</key>
+      <string>6C367T46DR</string>
+      <key>CFBundleVersion</key>
+      <string>1</string>
+      <key>CFBundleShortVersionString</key>
+      <string>1.0</string>
+      <key>URL</key>
+      <string>http://www.meklarian.com/extensions/objects/tools-palette.safariextz</string>
+    </dict>
 	</array>
 </dict>
 </plist>
