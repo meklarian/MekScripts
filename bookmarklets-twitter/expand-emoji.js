@@ -66,7 +66,7 @@ var emojiReplace = function(node) {
 };
 
 // NOTE: lazy lookup. 
-var ignoreNodes = ",a,textarea,input,style,link,meta,script,object,iframe,pre,head,html,title,";
+var ignoreNodes = ",textarea,input,style,link,meta,script,object,iframe,pre,head,html,title,";
 
 var replaceInTree = function(node, fnReplace) {
   if(node.nodeType !== 1){return;}
