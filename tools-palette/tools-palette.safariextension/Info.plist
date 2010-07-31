@@ -19,7 +19,18 @@
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
-		<dict/>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>jquery.min.js</string>
+				<string>toggle-palette.user.js</string>
+			</array>
+		</dict>
+		<key>Whitelist</key>
+		<array>
+			<string>http://twitter.com/*</string>
+			<string>http://brizzly.com/*</string>
+		</array>
 	</dict>
 	<key>Description</key>
 	<string>A script that adds extra filtering and embedding features to Twitter Web and Brizzly Web.</string>
@@ -34,10 +45,14 @@
 				<string>twitter.com</string>
 				<string>brizzly.com</string>
 			</array>
+			<key>Include Secure Pages</key>
+			<true/>
 			<key>Level</key>
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://www.meklarian.com/extensions/objects/safari-update-manifest.plist</string>
 	<key>Website</key>
 	<string>http://www.meklarian.com/extensions</string>
 </dict>
